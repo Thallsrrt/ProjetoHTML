@@ -24,7 +24,7 @@ def agendar():
     mes + " " + \
     dds + " " + \
     usu + " " + \
-    com + ">> /home/vagrant/teste.tmp")
+    com + ">> /etc/crontab")
     os.system("sed s/Todos/*/g /home/vagrant/teste.tmp")
 
 if re.match('^((Todos)|[0-9]|[1-5][0-9])$', minuto) \
