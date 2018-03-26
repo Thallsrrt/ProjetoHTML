@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Agendamento de Serviço</title>
+
+    <style type="text/css">
+
+label{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 20px;
+    color: #ffffff;
+    line-height: 40px;
+}
+
+input{
+    background-color: #000000;
+    font-family: verdana;
+    font-size: 13px;
+    color: #ffffff;
+}
+
+body{
+    background-color: #000000;
+}
+
+h1{
+    font-family: 'Kaushan Script', cursive;
+    color: #FFFFFF;
+    line-height: 5px;
+}
+#botao{
+    width: 67px;
+    height: 37px;
+    background-color: #000000;
+    font-family: verdana;
+    font-size: 13px;
+    color: #ffffff;
+}
+    </style>
+</head>
+<body>
+    <h1><center>Agende o serviço aqui</center></h1><br>
+    <form action="cron.cgi" method="post">
+        <center>
+        <p><label for="cMinuto">Minuto:</label><br>
+        <input type="text" name="cMinuto" placeholder="0-59 ; Digite Todos Para todos os minuto" id="cMinuto" size="38" maxlength="30" />
+        </p>
+
+        <p><label for="cHora">Hora:</label><br>
+        <input type="text" name="cHora" placeholder="0-23 ; Digite Todos Para todas as horas" id="cHora" size="38" maxlength="30" />
+        </p>
+
+        <p><label for="cDiaM">Dia do Mês:</label><br>
+        <input type="text" name="cDiaM" placeholder="1-31 ; Digite Todos Para todos os dias do mês" id="cDiaM" size="38" maxlength="30" />
+        </p>
+
+        <p><label for="cMes">Mês:</label><br>
+        <input type="text" name="cMes" placeholder="1-12 ; Digite Todos Para todos os meses" id="cMes" size="38" maxlength="30" />
+        </p>
+
+        <p><label for="cSemana">Dia da semana:</label><br>
+        <input type="text" name="cSemana" placeholder="0-7 ; Digite Todos Para todos os dias da semana" id="cSemana" size="38" maxlength="30" />
+        </p>
+
+        <p><label for="cUser">Usuário:</label><br>
+        <input type="text" name="cUser" placeholder="Digite o usuário que executará o comando" id="cUser" size="38" maxlength="30" />
+        </p>
+
+        <p><label for="cComando">Comando:</label><br>
+        <input type="text" name="cComando" placeholder="Digite o comando a ser executado" id="cComando" size="38" maxlength="30" />
+        </p><br>
+
+        <input type="submit" id="botao">
+        </center>
+    </form>
+</body>
+</html>

@@ -1,0 +1,17 @@
+#!/usr/bin/python
+#-*- Coding: utf8 -*-
+
+var=raw_input()
+login=var.split("&")[0].split("=")[1]
+senha=var.split("&")[1].split("=")[1]
+if login=="lucas" and senha=="123" :
+    print("content-type: text/html")
+    print""
+    f = open("site/menu.html","r")
+    arquivo=f.read()
+    f.close
+    print(arquivo)
+else:
+    print("content-type: text/html")
+    print""
+    print("<h1>Login falhou</h1>")

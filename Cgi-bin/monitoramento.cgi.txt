@@ -1,0 +1,29 @@
+#!/usr/bin/python
+#-*- coding: utf8 -*-
+
+var=raw_input()
+
+import os
+moni=var.split("=")[0]
+
+print("content-type: text/html")
+print("")
+
+if moni == "f_s":
+    os.system("iptables -L > firewall.tmp")
+    f = open("firewall.tmp","r")
+    arquivo=f.read()
+    f.close
+    print(arquivo)
+elif moni == "d_s":
+    os.system("systemctl status bind9 > bind9.tmp")
+    a = open("bind9.tmp","r")
+    arquivo=a.read()
+    a.close
+    print(arquivo)
+elif moni == "n_s":
+    os.system("systemctl status nagios3 > nagios3.tmp")
+    f = open("nagios3.tmp","r")
+    arquivo=f.read()
+    f.close
+    print(arquivo)

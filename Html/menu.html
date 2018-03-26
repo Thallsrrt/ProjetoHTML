@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+      <head>
+            <title>MENU</title>
+      <style type="text/css">
+
+form{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 35px;
+    color: #ffffff;
+    line-height: 60px;
+}
+
+input{
+    width: 67px;
+    height: 37px;
+    background-color: #000000;
+    font-family: verdana;
+    font-size: 13px;
+    color: #ffffff;
+}
+
+body{
+    background-color: #000000;
+}
+
+#agendamento{
+  width: 100px;
+  height: 50px;
+  background-color: #000000;
+  font-family: verdana;
+}
+
+      </style>
+      </head>
+
+        <body>
+          <form action="menu.cgi" method="post">
+          <center>
+               Firewall<br/>
+               <input type="submit" value="Iniciar" name="f_i">
+               <input type="submit" value="Parar" name="f_p">
+               <input type="submit" value="Reiniciar" name="f_r"><br><br>
+
+               DNS<br/>
+               <input type="submit" value="Iniciar" name="d_i">
+               <input type="submit" value="Parar" name="d_p">
+               <input type="submit" value="Reiniciar" name="d_r"><br><br>
+
+               Nagios<br/>
+              <input type="submit" value="Iniciar" name="n_i">
+              <input type="submit" value="Parar" name="n_p">
+              <input type="submit" value="Reiniciar" name="n_r"><br><br>
+
+               Agendamento<br/>
+              <input type="submit" value="Agendar" name="c_n"><br/><br/>
+
+               Status De Serviços<br/>
+              <input type="submit" value="Status" name="s_s"><br/><br/>
+
+          </center>
+          </form>
+
+      </body>
+ </html>

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+iptables -P INPUT DROP
+iptables -P OUTPUT DROP
+iptables -P FORWARD DROP
+iptables -F
+iptables -A INPUT -i eth0 -p tcp --dport 80 -j ACCEPT
+iptables -A OUTPUT -o eth0 -p tcp --sport 80 -j ACCEPT
+
