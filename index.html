@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <title>Gerenciador do Sistema</title>
+
+        <style type="text/css">
+
+fieldset{
+        font-family: 'Kaushan Script', cursive;
+        font-size: 20px;
+        color: #ffffff;
+        line-height: 40px;
+}
+
+input{
+        background-color: #000000;
+        font-family: verdana;
+        font-size: 13px;
+        color: #ffffff;
+}
+
+body{
+        background-color: #000000;
+}
+
+h1{
+        font-family: 'Kaushan Script', cursive;
+        color: #FFFFFF;
+}
+
+        </style>
+        </head>
+
+<body>
+                <h1><center>Sejam Bem vindos Amiguinhos!!</center></h1><br>
+                <form action="cgi-bin/login.cgi" method="post">
+                <center>
+                <fieldset id="usuario">
+                <legend> Identificação do Usuário</legend>
+                <p><label for="cNome">Usuario:</label>
+                <input type="text" name="tNome" id="cNome" size="38" maxlength="30" placeholder="Digite seu nome" />
+                </p>
+                <p><label for="cSenha">Senha:</label>
+                <input type="password" name="tSenha" id="cSenha" size="38" maxlength="38" placeholder="8 digitos" />
+                </p>
+                <input type="submit" name="Enviar">
+                </center>
+            </form>
+        </body>
+       
+        </html>
